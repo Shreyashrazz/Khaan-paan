@@ -1,0 +1,588 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: antiquewhite;
+
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    background-color: #FDA403;
+    color: #114232;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: none;
+    text-decoration: none;
+
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #114232;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 40px;
+    font-weight: 600;
+    font-size: large;
+
+}
+
+nav ul li:hover {
+    transition: 0.2s;
+    text-decoration: 2px #B80000 underline;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.logo {
+    font-size: 31px;
+    margin-left: 10px;
+    color: #B80000;
+
+}
+
+
+i {
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+/* <!-- ..................HERO........... --> */
+.hero {
+    width: 100%;
+    /* height: 500px; */
+    background: url(vecteezy_spices-for-use-as-cooking-ingredients-on-a-wooden-background_3823542.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    text-align: center;
+    padding: 160px 0;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.search-box {
+    max-width: 550px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.search-box input {
+    width: 70%;
+    padding: 10px;
+    outline: #B80000;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+    border: 1px solid #FDA403;
+}
+
+.search-box button {
+
+    padding: 10px 20px;
+    outline: #B80000;
+    border: 0;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 1rem;
+    background-color: #FDA403;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+/* <!-- ..................MENU........... --> */
+.menu h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.menu-section {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 10px;
+
+}
+
+
+.menu-card {
+    background: #FDA403;
+    margin: 30px 10px;
+    color: #B80000;
+    border-radius: 8px;
+    border: 1px solid black;
+    overflow: hidden;
+    box-shadow: 0 5px 8px #111;
+
+}
+
+.menu-card img {
+    width: 100%;
+    height: 200px;
+
+
+}
+
+.menu-card h2 {
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.menu-card p {
+    font-size: 18px;
+    padding-left: 5px;
+
+}
+
+.menu-card a {
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 0;
+    background-color: #B80000;
+    display: block;
+    color: aliceblue;
+    
+
+
+}
+
+/* ////////////footer//////// */
+/* footer {
+    background-color: rgb(24, 21, 21);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+
+}
+
+.right-foot  {
+    color: aliceblue; 
+  
+   
+   
+
+
+   
+    
+    
+
+}
+
+.right-foot h1 {
+   margin: 95px 30px 10px;
+   display: flex;
+   justify-content: space-between;
+   
+   
+   
+   
+
+}
+.right-foot p {
+    margin: 25px 25px;
+    text-align: center;
+    display: flex;
+
+   
+   
+    
+    
+
+
+    
+ 
+ }
+ .right-foot  a{
+ text-decoration: none;
+ color: aliceblue;
+ 
+ 
+ 
+ 
+    
+ 
+ }
+ .right-foot a:hover {
+    transition: 0.2s;
+    font-size: 35px;
+    color: #B80000;
+    
+    
+ 
+ }
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 100px;
+    
+}
+
+.footer-col ul {
+    list-style: none;
+    
+}
+
+.footer-col h1 {
+    color: aliceblue;
+    margin: 5px 70px;
+    font-size: 22px;
+    position: relative;
+    
+
+
+}
+
+.footer-col ul li {
+    padding: 10px 0;
+
+
+}
+
+.footer-col ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 18px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footer-col ul li a:hover {
+    opacity: 1;
+    color: #FDA403;
+    font-size: 25px;
+}
+.menu-icon{
+    font-size: 24px;
+    padding: 20px;
+    text-align: right;
+    cursor: pointer;
+    display: block;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    /* bottom: 0; */
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: aliceblue;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.col {
+    /* flex-basis: 25%; */
+    padding: 10px;
+
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+    /* flex-basis: 15%; */
+}
+
+.col h1 {
+
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+
+}
+
+.col a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* .col i{
+    margin: 0 10px 0 10px;
+} */
+
+
+
+
+.col ul li {
+    list-style: none;
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.col ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* i{
+    width: 30px;
+    height: 30px;
+    color:aliceblue;
+    text-align: right;
+    border-radius: 50%;
+    
+} */
+.col ul li a :hover {
+    transition: 0.2s;
+    color: #FDA403;
+    font-size: 25px;
+}
+
+.col ul li :hover {
+    transition: 0.2s ease;
+    font-size: 25px;
+    color: #FDA403;
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: #FDA403;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0px;
+    left: 10;
+    animation: moving 2s linear infinite;
+
+}
+
+
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@media(max-width: 700px) {
+
+    footer {
+        bottom: unset;
+    }
+
+    footer .footer-col ul {
+        margin-left: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    @media(max-width: 600px) {
+        footer.right-foot h1 p {
+            flex-direction: column;
+
+        }
+
+        .col {
+            flex-basis: 100%;
+
+
+
+        }
+
+        .col:nth-child(2),
+        .col:nth-child(3) {
+            flex-basis: 100%;
+        }
+
+
+    }
+}
+.close-icon  {
+    display: none;
+  
+} 
+
+@media only screen and (min-width: 800px) {
+    .menu-icon {
+        display: none;
+
+    }
+
+    .nav-list {
+        display: block;
+
+    }
+
+    .close-icon {
+        display: none;
+        display: flex;
+        justify-content: center;
+       
+    } 
+
+    .close-icon  {
+        display: none;
+      
+    } 
+
+}
+
+@media only screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+
+    }
+
+    .hero p {
+        font-size: 15px;
+        text-align: center;
+
+    }
+}
+
+/* @media(max-width: 800px){
+ 
+    footer .row{
+        flex-direction: column;
+        padding: 20px 30px;
+
+
+    }
+    footer .footer-col ul{
+        margin-left: 20px;
+        margin-bottom: 20px
+    }
+    @media(max-width: 600px){
+        footer.right-foot h1 p{
+            flex-direction: column;
+            
+            
+
+
+        } 
+    
+/* ////////////////////////////////responsive nav bar//////////////// */
+
+@media only screen and (max-width:800px) {
+    .menu-icon {
+      
+        font-size: 25px;
+        margin: 0 6px;
+        font-weight: bold;
+      
+    }
+
+    .nav-list {
+        background-color: antiquewhite;
+        padding: 14px;
+        position: absolute;
+        right: 0px;
+        left: 0;
+        top: 60px;
+        font-size: 10px;
+        height: auto;
+       
+
+    }
+
+    .nav-list li a {
+        display: block;
+        padding: 7px;
+        text-align: center;
+    }
+    .close-icon i{
+        /* display: none; */
+        font-weight: bold;
+        margin: 0 6px;
+        font-size: 25px;
+    }
+    .container h1{
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+@media only screen and (max-width:335px){
+    .container h1 {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .container i {
+        font-size: 20px;
+        /* font-weight: bold; */
+    }
+}
+   
+
+    
+
